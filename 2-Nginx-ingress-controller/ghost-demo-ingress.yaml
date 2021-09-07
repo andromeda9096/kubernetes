@@ -10,10 +10,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - h2g.tech
-    secretName: h2g-tls
+    - yourwebdomain.here
+    secretName: yourname-tls
   rules:
-  - host: h2g.tech
+  - host: yourwebdomain.here
     http:
       paths:
       - path: /
