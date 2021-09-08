@@ -22,9 +22,7 @@ helm install my-nginx-controller -n nginx-ingress ingress-nginx/ingress-nginx -f
       http: 80
       https: 443
 -   kind: DaemonSet
-  
-#can use ClusterIP or NodePort
--   type: LoadBalancer
+-   type: ClusterIP
 
 ## Create ingress for app (change config in ghost-demo-ingress.yaml for your cluster)
 
