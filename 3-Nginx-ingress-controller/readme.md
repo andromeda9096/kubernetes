@@ -1,7 +1,13 @@
 ## Official Page
 https://kubernetes.github.io/ingress-nginx/deploy/#using-helm
 
-## Install Nginx-ingress controller using Helm
+## Method 1 -Install Nginx-ingress controller using bash
+```
+wget https://raw.githubusercontent.com/andromeda9096/Kubernetes/main/3-Nginx-ingress-controller/intsall-nginx-ingress.sh && sudo chmod +x ./intsall-nginx-ingress.sh && ./intsall-nginx-ingress.sh
+```
+
+
+## Method 2 -Install Nginx-ingress controller using Helm manually
 ```
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
@@ -23,6 +29,8 @@ helm install my-nginx-controller -n nginx-ingress ingress-nginx/ingress-nginx -f
       https: 443
 -   kind: DaemonSet
 -   type: ClusterIP
+
+
 
 ## Create ingress for app (change config in ghost-demo-ingress.yaml for your cluster)
 
