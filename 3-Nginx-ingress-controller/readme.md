@@ -28,6 +28,8 @@ helm install my-nginx-controller -n nginx-ingress ingress-nginx/ingress-nginx -f
       http: 80
       https: 443
 -   kind: DaemonSet
+
+(on baremetal:ClusterIP, using Cloud: LoadBalancer)
 -   type: ClusterIP
 
 
