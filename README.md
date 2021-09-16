@@ -1,2 +1,2 @@
-# Play with Kubernetes 1.21
+# Kubernetes 1.21
  
