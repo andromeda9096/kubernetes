@@ -14,8 +14,7 @@ helm repo update
 ```
 
 ```
-kubectl create ns nginx-ingress
-helm install my-nginx-controller -n nginx-ingress ingress-nginx/ingress-nginx -f nginx-controller.yaml
+helm install nginx-ing ingress-nginx/ingress-nginx -n ingress --create-namespace -f nginx-controller.yaml
 ```
 
 
@@ -30,7 +29,7 @@ helm install my-nginx-controller -n nginx-ingress ingress-nginx/ingress-nginx -f
 -   kind: DaemonSet
 
 (on baremetal:ClusterIP, using Cloud: LoadBalancer)
--   type: ClusterIP
+-   type: LoadBalancer
 
 
 
