@@ -39,6 +39,10 @@ gcloud projects add-iam-policy-binding ${GCP_PROJECT} \
 --member=serviceAccount:cluster-admin@${GCP_PROJECT}.iam.gserviceaccount.com \
 --role=roles/editor
 ```
+```
+kubectl create secret generic cert-manager-credentials \
+--from-file=./gcp-cluster-admin.json
+```
 - Open Firewall for Master node can connect Workers on port : TCP/all
 
 ## 2-Create ClusterIssuer
