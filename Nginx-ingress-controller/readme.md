@@ -1,6 +1,13 @@
 ## Official Page
 https://kubernetes.github.io/ingress-nginx/deploy/#using-helm
 
+#### if using GKE create role first:
+```
+kubectl create clusterrolebinding cluster-admin-binding \
+--clusterrole cluster-admin \
+--user $(gcloud config get-value account)
+```
+
 ## Method 1 -Install Nginx-ingress controller using bash
 ```
 wget https://raw.githubusercontent.com/andromeda9096/kubernetes/main/Nginx-ingress-controller/intsall-nginx-ingress.sh && sudo chmod +x ./intsall-nginx-ingress.sh && ./intsall-nginx-ingress.sh
