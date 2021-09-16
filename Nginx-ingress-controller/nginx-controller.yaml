@@ -452,7 +452,7 @@ controller:
       http: http
       https: https
 
-    type: ClusterIP
+    type: LoadBalancer
 
     # type: NodePort
     # nodePorts:
