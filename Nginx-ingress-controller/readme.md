@@ -3,7 +3,7 @@ https://kubernetes.github.io/ingress-nginx/deploy/#using-helm
 
 ## Method 1 -Install Nginx-ingress controller using bash
 ```
-wget https://raw.githubusercontent.com/andromeda9096/Kubernetes/main/3-Nginx-ingress-controller/intsall-nginx-ingress.sh && sudo chmod +x ./intsall-nginx-ingress.sh && ./intsall-nginx-ingress.sh
+wget https://raw.githubusercontent.com/andromeda9096/kubernetes/main/Nginx-ingress-controller/intsall-nginx-ingress.sh && sudo chmod +x ./intsall-nginx-ingress.sh && ./intsall-nginx-ingress.sh
 ```
 
 
