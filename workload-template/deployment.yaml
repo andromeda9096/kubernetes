@@ -28,7 +28,7 @@ spec:
       tier: frontend
 
 # replicas and update
-  replicas: 3
+  replicas: 1
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -87,7 +87,7 @@ metadata:
   labels:
     app: wordpress
 spec:
-  storageClassName: longhorn
+  storageClassName: longhorn  # storageclass
   accessModes:
     - ReadWriteMany
   resources:
